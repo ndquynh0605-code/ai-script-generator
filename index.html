@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>AI Script Generator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Script Generator</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>AI Script Generator</h1>
+<div class="container">
 
-<input type="text" id="topic" placeholder="Nhập chủ đề video">
-<button onclick="generate()">Tạo kịch bản</button>
+<h1>🎬 AI Script Generator</h1>
+<p>Tạo kịch bản video bằng AI</p>
 
-<pre id="result"></pre>
+<div class="card">
+
+<input id="topic" placeholder="Nhập chủ đề video..." />
+
+<button onclick="generateScript()">Tạo kịch bản</button>
+
+<div id="loading" class="loading">AI đang viết kịch bản...</div>
+
+<textarea id="result" placeholder="Kịch bản sẽ xuất hiện ở đây"></textarea>
+
+<button onclick="copyScript()">📋 Copy Script</button>
+
+</div>
+
+<footer>
+AI Script Generator • Gemini API • 2026
+</footer>
+
+</div>
 
 <script src="script.js"></script>
 
